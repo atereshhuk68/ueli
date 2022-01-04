@@ -89,7 +89,7 @@ This plugin enables you to quickly convert currencies. The latest conversion rat
 
 ### Dictionary
 
-This plugin enables you to quickly look up the definition and synonyms of words. It uses an unofficial Google Dictionary API (https://googledictionaryapi.eu-gb.mybluemix.net/)
+This plugin enables you to quickly look up the definition and synonyms of words. It uses an unofficial Google Dictionary API (https://dictionaryapi.dev/)
 
 ![dictionary](assets/feature-dictionary.png)
 
@@ -178,6 +178,7 @@ This plugin enables you to quickly execute multiple things at once.
 
 | Keyboard shortcut                   | Description                                                  |
 | ----------------------------------- | ------------------------------------------------------------ |
+| <kbd>Alt</kbd> <kbd>Space Bar</kbd> | Open search box (Default value, can be adjusted in settings) |
 | <kbd>Enter</kbd>                    | Execute selected search result                               |
 | <kbd>Shift</kbd> <kbd>Enter</kbd>   | Execute selected program as admin (Windows only)             |
 | <kbd>Tab</kbd>                      | Autocomplete file path                                       |
@@ -222,7 +223,7 @@ For more check [here](https://github.com/oliverschwendener/ueli/issues).
 ### Requirements
 
 -   Git
--   Node 12.x.x
+-   Node 16.x.x
 -   Yarn
 
 ### Setup
@@ -270,11 +271,13 @@ $ yarn package
 
 ## Alternatives
 
--   [khanhas/ueli](https://github.com/khanhas/ueli)
 -   [Launchy](https://www.launchy.net/)
 -   [Wox](https://github.com/Wox-launcher/Wox)
+-   [Fluent Search](https://www.fluentsearch.net/)
+-   [Flow-Launcher](https://github.com/Flow-Launcher/Flow.Launcher)
 -   [Keypirinha](http://keypirinha.com/)
 -   [Alfred](https://www.alfredapp.com/)
+-   [Raycast](https://www.raycast.com/)
 -   [Hain](https://github.com/hainproject/hain)
 -   [Zazu App](http://zazuapp.org/)
 -   [Cerebro](https://cerebroapp.com/)

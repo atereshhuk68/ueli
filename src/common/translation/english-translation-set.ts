@@ -121,6 +121,12 @@ export const englishTranslationSet: TranslationSet = {
     appearanceSettingsScrollbarBorderRadius: "Scrollbar border radius",
     appearanceSettingsBorderRadiusDescription:
         "This is a css value, so you need to add 'px' like this '10px' or separate corners like this '10px 0px 10px 5px'",
+    appearanceSettingsUserInputFontWeight: "User input font weight",
+    appearanceSettingsSearchResultNameFontWeight: "Search result name font weight",
+    appearanceSettingsSearchResultDescriptionFontWeight: "Search result description font weight",
+    appearanceSettingsUserInputFontSize: "User input font size",
+    appearanceSettingsSearchResultDescriptionFontSize: "Search result name font size",
+    appearanceSettingsSearchResultNameFontSize: "Search result description font size",
 
     settingsUserInputTitle: "User input",
     settingsSearchResultsBoxTitle: "Search results box",
@@ -268,6 +274,7 @@ export const englishTranslationSet: TranslationSet = {
     windowsShutdownDescription: "Shut down computer",
     windowsRestart: "Restart",
     windowsRestartDescription: "Restart computer",
+    windowsReboot: "Reboot",
     windowsSignout: "Sign out",
     windowsSignoutDescription: "Sign out current user",
     windowsLock: "Lock",
@@ -309,7 +316,7 @@ export const englishTranslationSet: TranslationSet = {
     workflowIcon: "Icon",
     workflowExecutionSteps: "Execution steps",
     workflowExecutionArgumentType: "Executionargument Type",
-    wofkflowExecutionArgumentTypeCommandlineTool: "Commandline Tool",
+    workflowExecutionArgumentTypeCommandlineTool: "Commandline Tool",
     workflowExecutionArgumentTypeUrl: "URL",
     workflowInvalidExecutionStep: "Invalid execution step",
     workflowInvalidWorkflow: "Invalid workflow",
@@ -336,7 +343,7 @@ export const englishTranslationSet: TranslationSet = {
 
     dictionary: "Dictionary",
     dictionaryDescription:
-        "This plugin enables you to quickly look up the definition and synonyms of words. It uses an unofficial Google Dictionary API (https://googledictionaryapi.eu-gb.mybluemix.net/)",
+        "This plugin enables you to quickly look up the definition and synonyms of words. It uses an unofficial Google Dictionary API (https://dictionaryapi.dev/)",
     dictionaryPrefix: "Prefix",
     dictionaryMinSearchTermLength: "Min search term length",
     dictionaryDebounceDelay: "Debounce delay (in milliseconds)",
@@ -370,4 +377,11 @@ export const englishTranslationSet: TranslationSet = {
 
     controlPanel: "Control Panel",
     controlPanelSettingsDescription: "This plugin enables you to quickly find control panel items.",
+
+    weather: "Weather",
+    weatherPrefix: "Prefix",
+    weatherSettingsDescription:
+        "This plugin enables you to check the weather condition of any region. If no region is provided, it defaults to show the weather of your current location. Data is provided by wttr.in",
+    weatherTemperatureUnit: "Temperature Unit",
+    weatherCopyToClipboard: "Press enter to copy to clipboard",
 };

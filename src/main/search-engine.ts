@@ -126,9 +126,9 @@ export class SearchEngine {
     }
 
     public autoComplete(searchResultItem: SearchResultItem): string {
-        const originPlugin = this.getAllPlugins()
-            .filter((plugin) => plugin.isEnabled())
-            .find((plugin) => plugin.pluginType === searchResultItem.originPluginType);
+        const originPlugin = this.getAllPlugins().find(
+            (plugin) => plugin.isEnabled() && plugin.pluginType === searchResultItem.originPluginType,
+        );
 
         if (originPlugin && this.pluginSupportsAutocompletion(originPlugin)) {
             return originPlugin.autoComplete(searchResultItem);
@@ -139,11 +139,16 @@ export class SearchEngine {
 
     public refreshAllIndexes(): Promise<void> {
         return new Promise((resolve, reject) => {
-            Promise.all(
-                this.searchPlugins.filter((plugin) => plugin.isEnabled()).map((plugin) => plugin.refreshIndex()),
-            )
-                .then(() => resolve())
-                .catch((err) => reject(err));
+            Promise
+                .allSettled(this.searchPlugins.filter((plugin) => plugin.isEnabled()).map((plugin) => plugin.refreshIndex()))
+                .then((results) => {
+                    const failures = results.filter(r => r.status === 'rejected') as PromiseRejectedResult[];
+                    if (failures.length > 0) {
+                        reject(failures.map(f => f.reason));
+                    } else {
+                        resolve();
+                    }
+                });
         });
     }
 
