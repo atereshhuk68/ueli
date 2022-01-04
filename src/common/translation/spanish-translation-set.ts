@@ -123,6 +123,12 @@ export const spanishTranslationSet: TranslationSet = {
     appearanceSettingsScrollbarBorderRadius: "Radio de borde de la barra de scroll",
     appearanceSettingsBorderRadiusDescription:
         "Esto es un valor CSS, así que necesitas añadir 'px' de esta manera '10px' o así para esquinas separadas '10px 0px 10px 5px'",
+    appearanceSettingsUserInputFontWeight: "User Input Font Weight",
+    appearanceSettingsSearchResultNameFontWeight: "Search result name font weight",
+    appearanceSettingsSearchResultDescriptionFontWeight: "Search result description font weight",
+    appearanceSettingsUserInputFontSize: "User input font size",
+    appearanceSettingsSearchResultDescriptionFontSize: "Search result name font size",
+    appearanceSettingsSearchResultNameFontSize: "Search result description font size",
 
     settingsUserInputTitle: "Campo de entrada",
     settingsSearchResultsBoxTitle: "Caja de resultados de búsqueda",
@@ -273,6 +279,7 @@ export const spanishTranslationSet: TranslationSet = {
     windowsShutdownDescription: "Apagar equipo",
     windowsRestart: "Reiniciar",
     windowsRestartDescription: "Reiniciar equipo",
+    windowsReboot: "Reiniciar",
     windowsSignout: "Cerrar sesión",
     windowsSignoutDescription: "Cerrar sesión del usuario actual",
     windowsLock: "Bloquear",
@@ -314,7 +321,7 @@ export const spanishTranslationSet: TranslationSet = {
     workflowIcon: "Icono",
     workflowExecutionSteps: "Etapas de ejecución",
     workflowExecutionArgumentType: "Tipo de argumento de ejecución",
-    wofkflowExecutionArgumentTypeCommandlineTool: "Herramienta de línea de comandos",
+    workflowExecutionArgumentTypeCommandlineTool: "Herramienta de línea de comandos",
     workflowExecutionArgumentTypeUrl: "URL",
     workflowInvalidExecutionStep: "Etapa de ejecución inválida",
     workflowInvalidWorkflow: "Flujo de trabajo inválido",
@@ -341,7 +348,7 @@ export const spanishTranslationSet: TranslationSet = {
 
     dictionary: "Diccionario",
     dictionaryDescription:
-        "Este plugin te permite buscar de forma rápida en las deficiones y sinónimos de palabras. Usa un API no oficial de Google Dictionary (https://googledictionaryapi.eu-gb.mybluemix.net/)",
+        "Este plugin te permite buscar de forma rápida en las deficiones y sinónimos de palabras. Usa un API no oficial de Google Dictionary (https://dictionaryapi.dev/)",
     dictionaryPrefix: "Prefijo",
     dictionaryMinSearchTermLength: "Longitud mínima del término de búsqueda",
     dictionaryDebounceDelay: "Retraso de rebote (en milisegundos)",
@@ -375,4 +382,11 @@ export const spanishTranslationSet: TranslationSet = {
 
     controlPanel: "Panel de control",
     controlPanelSettingsDescription: "Este plugin te permite encontrar rápidamente elementos del panel de control.",
+
+    weather: "Tiempo",
+    weatherPrefix: "Prefijo",
+    weatherSettingsDescription:
+        "Este plugin le permite comprobar el estado meteorológico de cualquier región. Si no se proporciona ninguna región, de forma predeterminada se muestra el clima de su ubicación actual. Los datos son proporcionados por wttr.in",
+    weatherTemperatureUnit: "Unidad de temperatura",
+    weatherCopyToClipboard: "Presiona enter para copiar al portapapeles",
 };
